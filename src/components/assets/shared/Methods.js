@@ -52,25 +52,7 @@ export const updateArrayOfObjects = (stateObject, keyIndex, attributes) => {
 
 
 export const compareObjectKeys = (obj1, tempObj) => {
-    //values in tempObj replaces similar key values in obj1
-    // for (const [key, val] of Object.entries(tempObj)) {
-    //     if (key in obj1) {
-    //       // get the previous value
-    //       const oldVal = obj1[key]
-    //       // update updatedDoc
-    //       obj1[key] = val
-          
-    //       //store the change or do whatever
-    //     //   changes.push({
-    //     //     [key]: {
-    //     //       new: val,
-    //     //       old: oldVal
-    //     //     }
-    //     //   })
-    //     }
-    //   }
-
-    //   return obj1;
+  
 }
 
 
