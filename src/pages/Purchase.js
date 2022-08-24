@@ -2,8 +2,16 @@ import React, { useState } from "react";
 import { Tab } from "../components/Tab/Tab";
 import PersonalForm from "./PersonalForm";
 import BillingForm from "./BillingForm";
+import ConfirmPaymentCard from "../components/ConfirmCard/ConfirmCard";
+import { useNavigate } from "react-router-dom";
+import Button from "../components/Button/Button";
+import Layout from "../components/Layout/BodyWrapper";
 
 const CompletePurchase = () => {
+  let navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/result");
+  };
   const [tabSettings] = useState({
     tab1: {
       id: "Personal Info",
@@ -24,8 +32,8 @@ const CompletePurchase = () => {
   };
 
   return (
-    <div>
-      <h4>Complete Purchase</h4>
+    <Layout headerText="Complete Purchase">
+     
       <div className="col-md-12" style={{ padding: "0px" }}>
         <Tab
           currentTab={currentTab}
@@ -87,14 +95,21 @@ const CompletePurchase = () => {
             <div>
               <div className="row">
                 <div className="col-md-12">
-                  confirm
+                  <ConfirmPaymentCard />
+                  <br />
+                  <div style={{ marginLeft: "20%" }}>
+                    <Button onClick={handleClick}>Pay</Button>
+                    <span>
+                      <Button>Cancel Payment</Button>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </Tab>
       </div>
-    </div>
+    </Layout>
   );
 };
 

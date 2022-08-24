@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import classes from "./BodyWrapper.module.css";
 
-const BodyWrapper = () => {
-    return (
-        <div>
-            BodyWrapper
-        </div>
-    );
+const BodyWrapper = ({ children, headerText, action }) => {
+  return (
+    <div className={classes.wrapper}>
+        <div className={classes.innerWrapper}></div>
+        <div className={classes.bbody}>
+      <h1 className={classes.headerText}>{headerText}</h1>
+      <div className={classes.body}>{children}</div>
+      <div className={classes.action}>{action}</div></div>
+    </div>
+  );
 };
 
 export default BodyWrapper;
