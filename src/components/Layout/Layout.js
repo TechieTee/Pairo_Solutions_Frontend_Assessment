@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./BodyWrapper.module.css";
+import classes from "./Layout.module.css";
 
 const BodyWrapper = ({ children, headerText, action }) => {
   return (

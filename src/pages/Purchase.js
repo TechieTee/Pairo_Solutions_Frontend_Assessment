@@ -5,7 +5,7 @@ import BillingForm from "./BillingForm";
 import ConfirmPaymentCard from "../components/ConfirmCard/ConfirmCard";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button/Button";
-import Layout from "../components/Layout/BodyWrapper";
+import Layout from "../components/Layout/Layout";
 
 const CompletePurchase = () => {
   let navigate = useNavigate();
