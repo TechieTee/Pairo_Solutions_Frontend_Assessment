@@ -28,7 +28,7 @@ const BillingForm = () => {
       <Formik initialValues={cardInitialValues} enableReinitialize={true}>
         {({ values, isSubmitting, errors }) => (
           <Form>
-            <div>
+            <div> <div className="row">
               <div className="col-md-12">
                 <CustomDropdown
                   label="CardType"
@@ -36,11 +36,32 @@ const BillingForm = () => {
                   name="cardtype"
                   options={CardType}
                 />
+                </div>
+              </div><br/>
+              <div className="row">
+                <div className="col-md-6">
+                <CustomDropdown
+                  label="CardType"
+                  id="cardtype"
+                  name="cardtype"
+                  options={CardType}
+                />
+                </div>
+                <div className="col-md-6">
+                  <CustomDropdown
+                  label="CardType"
+                  id="cardtype"
+                  name="cardtype"
+                  options={CardType}
+                />
+                  
+                  <br />
+                </div>
               </div>
             </div>
           </Form>
         )}
-      </Formik>
+      </Formik><br/>
       <Button
         style={{ width: "auto" }}
         btnStyle="primary"
