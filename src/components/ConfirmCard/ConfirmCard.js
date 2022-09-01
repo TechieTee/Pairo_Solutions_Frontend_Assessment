@@ -6,7 +6,7 @@ const ConfirmCard = () => {
   return <div className={classes.wrapper}>
      <div className={classes.cardHeader}>
     
-<div className={classes.grid}><div>Data</div> <div>#50,000</div></div>
+<div className={classes.grid}><div>Item Name</div> <div>Price</div></div>
     
   </div>
   <div className={classes.card}>

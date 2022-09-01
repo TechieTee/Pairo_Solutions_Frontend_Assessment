@@ -44,7 +44,7 @@
   .default:active {
     background: #cedfff;
     outline: 0;
-    color: #1b69fb;
+    color: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
   }
   
   .default:disabled {
@@ -116,7 +116,7 @@
   
   /* PRIMARY BUTTON */
   .primary {
-    background: #1b69fb;
+    background:  linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
     border-radius: 5px;
     color: #fff;
     font-weight: 500;
@@ -140,7 +140,7 @@
   }
   
   .primary:focus {
-    background: #1b69fb;
+    background:  linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
     border: 2px solid #18a0fb;
     outline: 0;
   }

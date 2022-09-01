@@ -1,46 +1,46 @@
 .wrapper {
-    height: 400px;
-    width: 50%;
-    background: #ffffff;
-    margin: 50px 10%;
-  
-    box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
-    border-radius: 10px;
-  }
-  .cardHeader {
-    height: 50px;
-    width: 100%;
-    background: #2a7bc7;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card {
-    height: 350px;
-    width: 100%;
-    background: #ffffff;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    align-items: center;
-  }
+  height: 400px;
+  width: 85%;
+  background: #ffffff;
+  margin: 20px 0%;
+  box-shadow: 0px 6px 10px rgb(33 30 67 / 8%);
+  border-radius: 10px;
+}
+.cardHeader {
+  height: 50px;
+  width: 100%;
+  color: #ffffff;
+  background: #2F80ED;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  height: 350px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
 
-  .headerText {
-    font-family: "Product Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 67px;
-  
-    color: #4e598c;
-  }
-  .grid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-    padding: 10px 0 ;
-  }
+.headerText {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 67px;
+
+  color: #4e598c;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  padding: 10px 0;
+}
